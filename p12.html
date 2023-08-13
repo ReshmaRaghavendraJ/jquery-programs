@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btncss").click(function () {
+          $("h1").css("color", $("#color").val());
+          $("#div1").css({
+            backgroundColor: $("#bgcolor").val(),
+            fontsize: "120px",
+          });
+          //$("h1").css({ color: "Red", backgroundColor: "lightgreen" });
+        });
+      });
+    </script>
+    <style>
+      #div1 {
+        border: 2px solid gray;
+        width: 500px;
+        height: 400px;
+        margin: 20px;
+        padding: 20px;
+      }
+      p {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>One Two Buckle my shoes</h1>
+    <div id="div1">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam enim
+        error quaerat deleniti provident vitae tempora sunt nisi, reiciendis
+        eaque, laborum officiis nobis itaque corrupti culpa, dolore veritatis
+        quia similique!
+      </p>
+    </div>
+    <form>
+      <label>Select your favorate Color:</label>
+      <input type="color" id="color" /><br /><br />
+      <label>Select your Background Color:</label>
+      <input type="color" id="bgcolor" /><br /><br />
+      <input type="button" value="set css" id="btncss" />
+    </form>
+  </body>
+</html>

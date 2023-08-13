@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#app1").click(function () {
+          $("#p1").append(" Mantralayam");
+        });
+        $("#app2").click(function () {
+          $("#u1").append("<li>Hanuman</li>");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p id="p1">Welcome to Mysore</p>
+    <ul id="u1">
+      <li>Raghavendra swamy</li>
+      <li>lakshmi</li>
+    </ul>
+    <form>
+      <input type="button" value="append paragraph" id="app1" />
+      <input type="button" value="append list" id="app2" />
+    </form>
+  </body>
+</html>

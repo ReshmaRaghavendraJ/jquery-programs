@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btneach").click(function () {
+          $(".divtxt a").each(function (index, element) {
+            $(element).css({
+              color: "maroon",
+              backgroundColor: "yellow",
+              margin: "10px",
+              padding: "20px",
+            });
+            //  $(element).text($(element).text() + "-" + index);  (OR)
+            var d = $(element).text() + "-" + index;
+            alert(d);
+          });
+        });
+      });
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <div class="divtxt">
+      <a href="#">one</a>
+      <a href="#">Two</a>
+      <a href="#">Three</a>
+      <a href="#">Four</a>
+    </div>
+    <br /><br />
+    <form>
+      <input type="button" value="display" id="btneach" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("#a1").attr("href", "http://www.flipkart.com");
+          $("#a1").text("Flipkart Shopping");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <a href="http://www.gmail.com" id="a1">Gmail</a>
+    <input type="button" value="set attribute" id="btn" />
+  </body>
+</html>

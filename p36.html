@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          var s = $("#txt").val();
+          $("#p1").text(s);
+          $("#p2").html(s);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <label>Enter Text:</label>
+      <textarea id="txt" cols="30" rows="10"></textarea>
+      <p id="p1"></p>
+      <p id="p2"></p>
+      <input type="button" value="set" id="btn" />
+    </form>
+  </body></html>

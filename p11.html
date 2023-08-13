@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btntoggle").click(function () {
+          $("h1").toggleClass("csshead1");
+          $("h2").toggleClass("csshead2");
+          $("p").toggleClass("csspara");
+        });
+      });
+    </script>
+    <style>
+      .csshead1 {
+        color: yellowgreen;
+      }
+      .csshead2 {
+        color: red;
+      }
+      .csspara {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="csshead1">Welcome to Mysuru</h1>
+    <p class="csspara">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ut eaque
+      provident quos quas eveniet maiores asperiores enim soluta qui
+      voluptatibus aspernatur quod illo accusantium, eligendi dolorum debitis
+      similique sit.
+    </p>
+    <h2 class="csshead2">Sri Krishna</h2>
+    <form>
+      <input type="button" value="Toggle" id="btntoggle" />
+    </form>
+  </body>
+</html>

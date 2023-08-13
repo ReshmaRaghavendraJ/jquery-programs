@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btnremove").click(function () {
+          $("#div1").remove();
+        });
+      });
+    </script>
+    <style>
+      h1 {
+        color: red;
+      }
+      p {
+        color: green;
+      }
+      h3 {
+        color: orange;
+      }
+      #div1 {
+        background-color: yellow;
+        border: 1px solid darkgoldenrod;
+        width: 500px;
+        height: 200px;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <p>Welcome to mysuru</p>
+      <h1>Om Sri Raghavendraya Namaha</h1>
+      <h3>Welcome to Goa</h3>
+    </div>
+    <form>
+      <input type="button" value="Remove" id="btnremove" />
+    </form>
+  </body>
+</html>

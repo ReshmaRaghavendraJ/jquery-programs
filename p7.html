@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btnaddclass").click(function () {
+          $("h1,h2").addClass("cssheading");
+          $("#div1").addClass("cssdiv");
+        });
+      });
+    </script>
+    <style>
+      .cssheading {
+        color: violet;
+      }
+      .cssdiv {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <h2>Om Namaha Shivaya Namahaaa....</h2>
+    <div id="div1">
+      <p>
+        Pujyaya Raghavendraya Satya Dharma Ratayacha, Bhajatam Kalpavrkshaya
+        Namatam Kamadenave....!!!!
+      </p>
+    </div>
+    <form>
+      <input type="button" value="Add Class" id="btnaddclass" />
+    </form>
+  </body>
+</html>

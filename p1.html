@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!--<script src="jquery.min.js"></script>-->
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          var data = $("#txtdata").val();
+          $("#p1").text(data);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <h2>Simple Jquery Example</h2>
+      <div>
+        <label>Enter Text Content</label>
+        <textarea id="txtdata"></textarea>
+      </div>
+      <div>
+        <input type="button" value="Set Content" id="btn" />
+      </div>
+
+      <p id="p1"></p>
+    </form>
+  </body>
+</html>

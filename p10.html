@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#div1 a").click(function () {
+          $("#div1 a").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+    <style>
+      .css {
+        background-color: white;
+        color: green;
+        border: 1px solid green;
+        margin: 5px;
+        padding: 5px;
+      }
+      .active {
+        color: white;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <a href="#" class="css active">Home</a>
+      <a href="#" class="css">Service</a>
+      <a href="#" class="css">Product</a>
+      <a href="#" class="css">Contact</a>
+    </div>
+  </body>
+</html>

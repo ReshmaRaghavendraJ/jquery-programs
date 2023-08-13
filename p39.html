@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btnapp1").click(function () {
+          $("#p1").append($("#txt1").val());
+          /*var v = $("#txt1").val();  (OR)
+          $("#p1").append(v);*/
+        });
+        $("#btnapp2").click(function () {
+          $("#u1").append($("#txt2").val());
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p id="p1">Twinkle Twinkle....</p>
+    <ul id="u1">
+      <li>Urdu</li>
+      <li>malayalam</li>
+    </ul>
+    <form>
+      <label>Enter Text1:</label>
+      <input type="text" id="txt1" /><br /><br />
+      <label>Enter Text2:</label>
+      <input type="text" id="txt2" /><br /><br />
+      <input type="button" value="append1" id="btnapp1" />
+      <input type="button" value="append2" id="btnapp2" />
+    </form>
+  </body>
+</html>

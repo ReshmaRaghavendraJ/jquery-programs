@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        background-color: yellow;
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("#div1").empty();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="div1">
+      <p>Kuvempu House</p>
+      <img src="Images/s.png" />
+      <h1>Hello</h1>
+    </div>
+    <form>
+      <input type="button" value="Empty elements" id="btn" />
+    </form>
+  </body>
+</html>

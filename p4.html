@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("#a1").text($("#txt").val());
+          $("#a1").attr({
+            href: $("#txt").val(),
+            title: $("#txttooltip").val(),
+            target: "_blank",
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <label>Enter Text Name:</label>
+      <input type="text" id="txt" />
+      <br /><br />
+      <label>Enter href:</label>
+      <input type="text" id="txtattr" /><br /><br />
+      <label>Enter Tooltip:</label>
+      <input type="text" id="txttooltip" />
+
+      <input type="button" value="Set Attribute" id="btn" />
+    </form>
+    <a href="http://wwww.google.com" id="a1">GOOGLE</a>
+  </body>
+</html>

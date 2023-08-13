@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $(".div").last().prev().css({
+            color: "red",
+            backgroundColor: "yellow",
+            width: "100px",
+            margin: "10px",
+            padding: "10px",
+          });
+        });
+      });
+    </script>
+    <style>
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <br /><br />
+    <div class="div">div1</div>
+    <div class="div">div2</div>
+    <div class="div">div3</div>
+    <div class="div">div4</div>
+    <div class="div">div5</div>
+    <div class="div">div6</div>
+    <br /><br />
+    <form>
+      <input type="button" value="display" id="btn" />
+    </form>
+  </body>
+</html>
